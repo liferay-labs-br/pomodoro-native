@@ -1,15 +1,17 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import SvgUri from 'react-native-svg-uri';
+import Button from 'react-native-button';
 
 export default class Tomato extends React.Component {
-  componentWillReceiveProps(){
+  constructor(props) {
+    super(props);
 
   }
 
   render() {
     return (
-        <SvgUri
+       <SvgUri
             width="200"
             height="200"
             source={{uri:'https://image.flaticon.com/icons/svg/135/135702.svg'}}
@@ -17,3 +19,9 @@ export default class Tomato extends React.Component {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  SvgUri : {
+
+  }
+});
